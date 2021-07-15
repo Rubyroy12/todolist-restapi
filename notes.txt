@@ -1,0 +1,14 @@
+A REST API is a standardized way to provide data to other applications.
+
+There are a few key options for a REST API request:
+GET — The most common option, returns some data from the API based on the endpoint you visit and any parameters you provide
+POST — Creates a new record that gets appended to the database
+PUT — Looks for a record at the given URI you provide. If it exists, update the existing record. If not, create a new record
+DELETE — Deletes the record at the given URI
+PATCH — Update individual fields of a record
+
+Serialize the Hero model
+Now we’re starting to get into some new waters. 
+We need to tell REST Framework about our Hero model and how it should serialize the data.
+Remember, serialization is the process of converting a Model to JSON. Using a serializer, 
+we can specify what fields should be present in the JSON representation of the model.
